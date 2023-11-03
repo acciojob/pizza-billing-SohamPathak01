@@ -9,14 +9,11 @@ public class Main {
     dp.addTakeaway();
     System.out.println(dp.getBill());
 
-    DeluxePizza ndp = new DeluxePizza(false);
-    ndp.addTakeaway();
-    System.out.println(ndp.getBill());
 
-    Pizza p = new Pizza(false);
-    //p.addExtraCheese();
-    //p.addExtraToppings();
-    //p.addTakeaway();
+    Pizza p = new Pizza(true);
+    p.addExtraCheese();
+    p.addExtraToppings();
+    p.addTakeaway();
     System.out.println(p.getBill());
   }
 }
