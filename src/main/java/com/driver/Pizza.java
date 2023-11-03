@@ -13,6 +13,9 @@ public class Pizza {
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
+        extrachess=false;
+        extratoppings=false;
+        takeaway=false;
         // your code goes here
 
         if(isVeg){
