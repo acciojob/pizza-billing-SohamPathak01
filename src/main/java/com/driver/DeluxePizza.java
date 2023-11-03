@@ -9,5 +9,6 @@ public class DeluxePizza extends Pizza {
         // your code goes her
             addExtraCheese();
             addExtraToppings();
+            setIsDeluxe();
     }
 }
