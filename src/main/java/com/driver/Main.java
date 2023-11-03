@@ -10,6 +10,7 @@ public class Main {
     System.out.println(dp.getBill());
 
     DeluxePizza ndp = new DeluxePizza(false);
+    ndp.addTakeaway();
     System.out.println(ndp.getPrice());
 
     Pizza p = new Pizza(false);
