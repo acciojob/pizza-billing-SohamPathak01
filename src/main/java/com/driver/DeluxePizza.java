@@ -5,7 +5,7 @@ public class DeluxePizza extends Pizza {
     //private boolean takeaway;
     int price;
     String bill;
-    public DeluxePizza(Boolean isVeg,boolean takeaway) {
+    public DeluxePizza(Boolean isVeg,Boolean takeaway) {
         super(isVeg);
         // your code goes her
             addExtraCheese();
