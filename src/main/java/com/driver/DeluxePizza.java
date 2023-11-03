@@ -2,23 +2,18 @@ package com.driver;
 
 public class DeluxePizza extends Pizza {
 
-    private boolean takeaway;
+    //private boolean takeaway;
     int price;
-    public DeluxePizza(Boolean isVeg) {
+    String bill;
+    public DeluxePizza(Boolean isVeg,boolean takeaway) {
         super(isVeg);
         // your code goes her
             addExtraCheese();
             addExtraToppings();
-            //addTakeaway();
+            if(takeaway)
+                addTakeaway();
+
+            this.bill=getBill();
             this.price=getPrice();
-    }
-    public void setTakeaway(){
-        if(takeaway){
-            return;
-        }
-        else{
-            takeaway=true;
-        }
-        price+=20;
     }
 }
